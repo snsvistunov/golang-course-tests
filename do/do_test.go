@@ -36,6 +36,13 @@ func Test_DoFunc(t *testing.T) {
 			expRes:    "",
 			expErr:    "invalid s",
 		},
+		"invalid input int 13, 21, 34": {
+			inputStr:  "h",
+			inputInt:  34,
+			inputBool: true,
+			expRes:    "",
+			expErr:    "invalid s",
+		},
 	}
 
 	for name, tt := range tests {
